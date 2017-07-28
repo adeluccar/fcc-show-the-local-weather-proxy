@@ -18,15 +18,18 @@ From fCC's Show the Local Weather project page [here](https://www.freecodecamp.c
 
 Make sure you have Git, Heroku and NPM installed. If you're on a Mac, Homebrew makes this easy.
 
-- `git clone repo`
+- `git clone git@github.com:adeluccar/fcc-show-the-local-weather-proxy.git`
+- `cd fcc-show-local-weather-proxy`
 - `npm install` (if you want to try it out locally)
 - `heroku create` (make a note of the name of the heroku instance)
 - `git remote -v` (verify that heroku is listed as a remote)
 - `git push heroku master`
+- `heroku config:set DARKSKYAPIKEY=your-dark-sky-api-key`
 
 ### Usage
 
 1. Send GET requests with latitude and longitude parameters to your own server (not Dark Sky).
+    `https://[your-heroku-app-name].herokuapp.com/?lat=xxx&lon=yyy`
 2. Receive a JSON with the current weather data for the location specified in the request parameters.
 
 ### User Stories
