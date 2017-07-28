@@ -1,0 +1,19 @@
+{
+  "name": "show-the-local-weather-proxy",
+  "version": "0.0.1",
+  "description": "A simple proxy server for fCC's Show the Local Weather challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adeluccar/fcc-show-the-local-weather-proxy.git"
+  },
+  "author": "Alberto De Lucca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adeluccar/fcc-show-the-local-weather-proxy/issues"
+  },
+  "homepage": "https://github.com/adeluccar/fcc-show-the-local-weather-proxy#readme"
+}
