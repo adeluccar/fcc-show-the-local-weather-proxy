@@ -31,15 +31,15 @@ Make sure you have Git, Heroku and NPM installed. If you're on a Mac, Homebrew m
 
 ### User Stories
 
-- [ ] I should be able to make a GET request with two parameters (latitude and longitude).
+- [x] I should be able to make a GET request with two parameters (latitude and longitude).
 
-- [ ] I should not need to send my API key through a request to this server.
+- [x] I should not need to send my API key through a request to this server.
 
-- [ ] I should be able to configure my API key through an environment variable.
+- [x] I should be able to configure my API key through an environment variable.
 
-- [ ] I should receive a JSON object with current weather from Dark Sky if my parameters are correct.
+- [x] I should receive a JSON object with current weather from Dark Sky if my parameters are correct.
 
-- [ ] I should receive an error if my request is malformed.
+- [x] I should receive an error if my request is malformed.
 
 ### Contributing
 
