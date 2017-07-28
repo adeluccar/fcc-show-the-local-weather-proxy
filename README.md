@@ -28,8 +28,10 @@ Make sure you have Git, Heroku and NPM installed. If you're on a Mac, Homebrew m
 
 ### Usage
 
-1. Send GET requests with latitude and longitude parameters to your own server (not Dark Sky).
+1. Send GET requests with latitude and longitude parameters to your own server (not Dark Sky). Like so:
+
     `https://[your-heroku-app-name].herokuapp.com/?lat=xxx&lon=yyy`
+
 2. Receive a JSON with the current weather data for the location specified in the request parameters.
 
 ### User Stories
