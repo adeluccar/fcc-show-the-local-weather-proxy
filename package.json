@@ -4,7 +4,8 @@
   "description": "A simple proxy server for fCC's Show the Local Weather challenge",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/adeluccar/fcc-show-the-local-weather-proxy/issues"
   },
-  "homepage": "https://github.com/adeluccar/fcc-show-the-local-weather-proxy#readme"
+  "homepage": "https://github.com/adeluccar/fcc-show-the-local-weather-proxy#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
