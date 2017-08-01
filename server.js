@@ -1,8 +1,11 @@
 const express = require('express')
 const https = require('https')
+const cors = require('cors')
 const app = express()
 
 const DARKSKYAPIKEY = process.env.DARKSKYAPIKEY
+
+app.use(cors());
 
 app.get('/', function(req, res){
   const lat = req.query.lat
