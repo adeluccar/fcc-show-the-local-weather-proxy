@@ -5,7 +5,7 @@ const app = express()
 
 const DARKSKYAPIKEY = process.env.DARKSKYAPIKEY
 
-app.use(cors());
+app.use(cors({ origin:'https://adeluccar.github.io' }))
 
 app.get('/', function(req, res){
   const lat = req.query.lat
