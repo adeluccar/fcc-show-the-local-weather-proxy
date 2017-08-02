@@ -20,7 +20,7 @@ Make sure you have Git, Heroku and NPM installed. If you're on a Mac, Homebrew m
 
 - `git clone git@github.com:adeluccar/fcc-show-the-local-weather-proxy.git`
 - `cd fcc-show-local-weather-proxy`
-- `npm install` (if you want to try it out locally)
+- `pnpm install` (if you want to try it out locally - note that I use pnpm for managing my node packages)
 - `heroku create` (make a note of the name of the heroku instance)
 - `git remote -v` (verify that heroku is listed as a remote)
 - `git push heroku master`
