@@ -5,9 +5,18 @@ const app = express()
 
 const DARKSKYAPIKEY = process.env.DARKSKYAPIKEY
 
-app.use(cors({ origin:'https://adeluccar.github.io' }))
+const whitelist = ['https://adeluccar.github.io', 'http://localhost:8080'];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
 
-app.get('/', function(req, res){
+app.get('/', cors(corsOptions), function(req, res){
   const lat = req.query.lat
   const lon = req.query.lon
   res.setHeader('Content-Type', 'application/json')
